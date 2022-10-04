@@ -1,0 +1,234 @@
+body{
+    main{ 
+        section{
+            .verdura{
+                h3{
+                    font-family:$fuente-principal;
+                    color: whitesmoke;
+                    font-size: 40px;
+                    font-weight: bold;
+                    background-color: #D9D18B;
+                    padding:5px;
+                    text-align: center;
+                }
+            }
+            .variedades_verduras{
+                    margin: 50px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    flex-direction: row;
+
+                    div{
+                        width: 250px;
+                        height: auto;
+                        img{
+                            margin: 5px;
+                            width: 200px;
+                            height: 200px;
+
+                        }
+                        h2{
+                            font-family:$fuente-principal;
+                            color: whitesmoke;
+                            font-size: 20px;
+                            font-weight: bold;
+                            background-color: #D9D18B;
+                            padding:5px;
+                            text-align: center;
+                        }
+                        label{
+                            font-family:$fuente-principal;
+                            color: whitesmoke;
+                            font-size: 20px;
+                            font-weight: bold;
+                            background-color: #D9D18B;
+                            padding:5px;        
+                        }
+                        display: flex;
+                        align-items: center;
+                        justify-items: center;
+                        flex-direction: column;
+                        margin: 10px;
+                        padding: 10px;
+                        border: 2px solid #FFC270;
+                        background-color: #D9D18B;
+                    }
+                    .boton{
+                        margin: 10px;
+                        padding: 2px;
+                        border: 1px solid whitesmoke ;
+                        background-color: #8EF075;
+                        font-family: $fuente-principal;
+                        font-size: 20px;
+                        text-decoration: none;
+                        span{
+                            margin: 10px;
+                            padding: 2px;
+                            align-items: center;
+                            justify-items: center;
+                        }
+
+                    }
+                }
+        }
+        section{
+            .fruta{
+                h3{
+                    font-family:$fuente-principal;
+                    color: whitesmoke;
+                    font-size: 40px;
+                    font-weight: bold;
+                    background-color:#FFC270 ;
+                    padding:5px;
+                    text-align: center;
+                }
+            }
+            .variedad_fruta{
+                margin: 50px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-direction: row;
+
+                div{
+                    width: 250px;
+                    height: auto;
+                    img{
+                        margin: 5px;
+                        width: 200px;
+                        height: 200px;
+
+                    }
+                    h2{
+                        font-family:$fuente-principal;
+                        color: whitesmoke;
+                        font-size: 20px;
+                        font-weight: bold;
+                        background-color: #D9D18B;
+                        padding:5px;
+                        text-align: center;
+                    }
+                    label{
+                        font-family:$fuente-principal;
+                        color: whitesmoke;
+                        font-size: 20px;
+                        font-weight: bold;
+                        background-color: #D9D18B;
+                        padding:5px;        
+                    }
+                    display: flex;
+                    align-items: center;
+                    justify-items: center;
+                    flex-direction: column;
+                    margin: 10px;
+                    padding: 10px;
+                    border: 2px solid #FFC270;
+                    background-color: #D9D18B;
+                }
+                .boton{
+                    margin: 10px;
+                    padding: 2px;
+                    border: 1px solid whitesmoke ;
+                    background-color: #8EF075;
+                    font-family: $fuente-principal;
+                    font-size: 20px;
+                    text-decoration: none;
+                    span{
+                        margin: 10px;
+                        padding: 2px;
+                        align-items: center;
+                        justify-items: center;
+                    }
+
+                }
+            }
+    }
+        section{
+            .hierba{
+                h3{
+                    font-family:$fuente-principal;
+                    color: whitesmoke;
+                    font-size: 40px;
+                    font-weight: bold;
+                    background-color: #8EF075;
+                    padding:5px;
+                    text-align: center;
+                }
+            }
+            .variedad_hierbas{
+                margin: 50px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-direction: row;
+
+                div{
+                    width: 250px;
+                    height: auto;
+                    img{
+                        margin: 5px;
+                        width: 200px;
+                        height: 200px;
+
+                    }
+                    h2{
+                        font-family:$fuente-principal;
+                        color: whitesmoke;
+                        font-size: 20px;
+                        font-weight: bold;
+                        background-color: #D9D18B;
+                        padding:5px;
+                        text-align: center;
+                    }
+                    label{
+                        font-family:$fuente-principal;
+                        color: whitesmoke;
+                        font-size: 20px;
+                        font-weight: bold;
+                        background-color: #D9D18B;
+                        padding:5px;        
+                    }
+                    display: flex;
+                    align-items: center;
+                    justify-items: center;
+                    flex-direction: column;
+                    margin: 10px;
+                    padding: 10px;
+                    border: 2px solid #FFC270;
+                    background-color: #D9D18B;
+                }
+                .boton{
+                    margin: 10px;
+                    padding: 2px;
+                    border: 1px solid whitesmoke ;
+                    background-color: #8EF075;
+                    font-family: $fuente-principal;
+                    font-size: 20px;
+                    text-decoration: none;
+                    span{
+                        margin: 10px;
+                        padding: 2px;
+                        align-items: center;
+                        justify-items: center;
+                    }
+
+                }
+            }
+    }
+    }
+        .section_total{
+            .total{
+                h3{
+                    font-family:$fuente-principal;
+                    color: whitesmoke;
+                    font-size: 40px;
+                    font-weight: bold;
+                    background-color: orange;
+                    padding:5px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+

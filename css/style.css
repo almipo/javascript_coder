@@ -1,0 +1,247 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body header {
+  background-image: url();
+  opacity: 0.7;
+  height: 300px; }
+  body header .logo img {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-left: 500px;
+    margin-top: 100px; }
+  body header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; }
+    body header nav ul {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 20px;
+      opacity: none;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-items: center;
+      align-items: center; }
+      body header nav ul li {
+        margin: 10px;
+        padding: 5px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        color: white; }
+        body header nav ul li ul {
+          flex-direction: column;
+          background-color: grey;
+          display: none;
+          position: absolute; }
+          body header nav ul li ul li {
+            background-color: grey;
+            margin: 10px;
+            padding: 2px;
+            font-family: "Roboto", sans-serif;
+            font-size: 18px;
+            flex-direction: column; }
+      body header nav ul .verdura {
+        background-color: #D9D18B; }
+      body header nav ul .fruta {
+        background-color: #FFC270; }
+      body header nav ul .hierbas {
+        background-color: #8EF075; }
+  body header li:hover {
+    background-color: #5FD9BC; }
+  body header .nav li:hover > ul {
+    display: block; }
+
+body main section .verdura h3 {
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #D9D18B;
+  padding: 5px;
+  text-align: center; }
+
+body main section .variedades_verduras {
+  margin: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row; }
+  body main section .variedades_verduras div {
+    width: 250px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #FFC270;
+    background-color: #D9D18B; }
+    body main section .variedades_verduras div img {
+      margin: 5px;
+      width: 200px;
+      height: 200px; }
+    body main section .variedades_verduras div h2 {
+      font-family: "Roboto", sans-serif;
+      color: whitesmoke;
+      font-size: 20px;
+      font-weight: bold;
+      background-color: #D9D18B;
+      padding: 5px;
+      text-align: center; }
+    body main section .variedades_verduras div label {
+      font-family: "Roboto", sans-serif;
+      color: whitesmoke;
+      font-size: 20px;
+      font-weight: bold;
+      background-color: #D9D18B;
+      padding: 5px; }
+  body main section .variedades_verduras .boton {
+    margin: 10px;
+    padding: 2px;
+    border: 1px solid whitesmoke;
+    background-color: #8EF075;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    text-decoration: none; }
+    body main section .variedades_verduras .boton span {
+      margin: 10px;
+      padding: 2px;
+      align-items: center;
+      justify-items: center; }
+
+body main section .fruta h3 {
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #FFC270;
+  padding: 5px;
+  text-align: center; }
+
+body main section .variedad_fruta {
+  margin: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row; }
+  body main section .variedad_fruta div {
+    width: 250px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #FFC270;
+    background-color: #D9D18B; }
+    body main section .variedad_fruta div img {
+      margin: 5px;
+      width: 200px;
+      height: 200px; }
+    body main section .variedad_fruta div h2 {
+      font-family: "Roboto", sans-serif;
+      color: whitesmoke;
+      font-size: 20px;
+      font-weight: bold;
+      background-color: #D9D18B;
+      padding: 5px;
+      text-align: center; }
+    body main section .variedad_fruta div label {
+      font-family: "Roboto", sans-serif;
+      color: whitesmoke;
+      font-size: 20px;
+      font-weight: bold;
+      background-color: #D9D18B;
+      padding: 5px; }
+  body main section .variedad_fruta .boton {
+    margin: 10px;
+    padding: 2px;
+    border: 1px solid whitesmoke;
+    background-color: #8EF075;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    text-decoration: none; }
+    body main section .variedad_fruta .boton span {
+      margin: 10px;
+      padding: 2px;
+      align-items: center;
+      justify-items: center; }
+
+body main section .hierba h3 {
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #8EF075;
+  padding: 5px;
+  text-align: center; }
+
+body main section .variedad_hierbas {
+  margin: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row; }
+  body main section .variedad_hierbas div {
+    width: 250px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #FFC270;
+    background-color: #D9D18B; }
+    body main section .variedad_hierbas div img {
+      margin: 5px;
+      width: 200px;
+      height: 200px; }
+    body main section .variedad_hierbas div h2 {
+      font-family: "Roboto", sans-serif;
+      color: whitesmoke;
+      font-size: 20px;
+      font-weight: bold;
+      background-color: #D9D18B;
+      padding: 5px;
+      text-align: center; }
+    body main section .variedad_hierbas div label {
+      font-family: "Roboto", sans-serif;
+      color: whitesmoke;
+      font-size: 20px;
+      font-weight: bold;
+      background-color: #D9D18B;
+      padding: 5px; }
+  body main section .variedad_hierbas .boton {
+    margin: 10px;
+    padding: 2px;
+    border: 1px solid whitesmoke;
+    background-color: #8EF075;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    text-decoration: none; }
+    body main section .variedad_hierbas .boton span {
+      margin: 10px;
+      padding: 2px;
+      align-items: center;
+      justify-items: center; }
+
+body .section_total .total h3 {
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: orange;
+  padding: 5px;
+  text-align: center; }
