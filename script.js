@@ -2,10 +2,17 @@
 
 
 
+
+
 console.log("BIENVENIDO A MAYORISTA MAYOFRUIT");
 
-let cliente=prompt("ingrese su usuario");
-console.log("BIENVENIDO" , cliente);
+
+function saludar_usuario(){
+    let cliente=prompt("ingrese su usuario");   
+    console.log("BIENVENIDO" , cliente);
+}
+saludar_usuario();
+
 console.log("nuestros productos en stock son");
 console.log("vVERDURAS")
 console.log("cebolla: $500");
@@ -199,3 +206,4 @@ else{
 //total de toda la compra
 console.log("el total de su pedido a abonar es: $" , total);
 
+saludar_usuario();
