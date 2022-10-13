@@ -9,8 +9,6 @@ console.log("BIENVENIDO A MAYORISTA MAYOFRUIT");
 //funcion de bienvenida
 
 function saludar_usuario(){
-
-
     let cliente=prompt("ingrese su usuario");   
     console.log("BIENVENIDO" , cliente);
 }
@@ -19,24 +17,22 @@ saludar_usuario();
 //lista de productos para pedir
 console.log("nuestros productos en stock son");
 console.log("VERDURAS")
-console.log("cebolla: $500");
-console.log("papa: $200");
-console.log("boniato: $200");
-console.log("tomate: $250");
 
-console.log("FRUTA")
-console.log("manzana: $300");
-console.log("pera: $180");
-console.log("banana: $400");
-console.log("mango: $800");
+//lista verdura
 
-console.log("HIERBAS")
-console.log("romero: $ 700");
-console.log("cilantro: $1000");
-console.log("perejil: $500");
-console.log("albahaca: $700");
+let lista_verdura=["cebolla: $500", "papa:$ 200", "boniato: $200", "tomate: $250"];
+let lista_verdura_join=lista_verdura.join();
+console.log("lista de verdura en stock " , lista_verdura_join);
 
-console.log("Seleccione los productos a encargar");
+
+let lista_fruta=["manzana: $300", "pera: $180", "banana:$400", "mango: $800"];
+let lista_fruta_join=lista_fruta.join();
+console.log("lista de fruta en stock", lista_fruta_join);
+
+
+let lista_hierbas=["romero: $700", "cilantro: $1000", "perejil: $500", "albahaca: $700"];
+let lista_hierbas_join=lista_hierbas.join();
+console.log("lista de hierbas en stock", lista_hierbas_join);
 
 //constantes de los precios
 const precio_cebolla= 500;
@@ -124,6 +120,7 @@ while(producto != "total verdura" ){
 
 //ingreso de frutas al pediod
 while(producto != "total fruta"){
+
     producto=prompt("ingrese el nombre de la fruta a encargar \n o total fruta"); 
     cantidad=parseInt( prompt("ingrese cantidad de kg que desea, si pidio la cuenta \n 0"));
 
@@ -230,13 +227,12 @@ console.log("el total de su pedido a abonar es: $" , total);
 function calcular_descuento(total){
 
     if(total>= 10000){
-  descuento = total * 0.1;
-    return descuento;
-    
-}
-else{
-    descuento=0
-}
+        descuento = total * 0.1;
+        return descuento;
+    }
+    else{
+        descuento=0
+    }
 }
 
 
