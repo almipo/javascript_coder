@@ -6,6 +6,28 @@
 
 console.log("BIENVENIDO A MAYORISTA MAYOFRUIT");
 
+// aplicando objetos con los locales
+
+let local_uno = {
+    direccion:"rolon 641",
+    localidad:"vicente lopes",
+    cp:2641,
+    telefono:45454544,
+    horario:"8hs a 20hs"
+};
+
+
+let local_dos = {
+    direccion : "cabildo 500",
+    localidad: "capital federa", 
+    telefono:5555-555,
+    cp:2415,
+    horario:"10hs a 24hs"
+};
+
+console.log("puede encontrarnos en nuestro local de provincia de bsas", local_uno);
+console.log("tambien puede encontrarnos en capital federal", local_dos);
+
 //funcion de bienvenida
 
 function saludar_usuario(){
@@ -18,7 +40,7 @@ saludar_usuario();
 console.log("nuestros productos en stock son");
 console.log("VERDURAS")
 
-//lista verdura
+//lista producto con el agregado de array
 
 let lista_verdura=["cebolla: $500", "papa:$ 200", "boniato: $200", "tomate: $250"];
 let lista_verdura_join=lista_verdura.join();
@@ -128,7 +150,6 @@ while(producto != "total fruta"){
         console.log("manzana: ", cantidad , ("kg"));
         total_manzana =( precio_manzana * cantidad)+total_manzana;
         console.log("valor: $" , total_manzana );
-
     }
     
     else if(producto == "pera" || producto=="PERA"){
@@ -149,13 +170,11 @@ while(producto != "total fruta"){
 
     else if(producto = "total fruta"){
         console.log("el total a abonar de fruta es: $" , total_fruta);        
-
     }
 
     else {
         console.log("no tenemos esa fruta, ingrese otra");
         }
-
 
 }
 total_fruta = total_manzana + total_pera + total_banana + total_mango;
@@ -189,10 +208,9 @@ while(producto != "total hierbas"){
         total_albahaca = (precio_albahaca * cantidad)+total_albahaca;
         console.log("valor: $" , total_albahaca);
     }
+
     else if(producto="total hierbas"){
         console.log("el total a abonar de hierbas es: $" , total_hierba); 
-
-
     }
 
     else {
@@ -200,19 +218,22 @@ while(producto != "total hierbas"){
         }
 
     total_hierba = total_romero + total_cilantro + total_perejil + total_albahaca;
-
 }
 
 
 
 
 //valor de la variable suma
-suma= total_verdura + total_fruta + total_hierba;
+function total_sumatoria(suma){
+
+    suma= total_verdura + total_fruta + total_hierba;
+    return suma
+}
 
 //calculo de medio de pago
 medio_de_pago=prompt("quiere pagar con: \n efectivo \n tarjeta");
 if(medio_de_pago == "tarjeta"){
-    total= suma * 1.15;
+    total= total_sumatoria * 1.15;
 }
 else{
     total=suma;
@@ -238,13 +259,14 @@ function calcular_descuento(total){
 
 //total con descuento
 
-let total_con_descuento = total - calcular_descuento(total);
 
-if(descuento > 0){
-console.log("por superar los $10000, tiene un descuento del 10%, su total seria: $", total_con_descuento);
+function total_con_descuento(){
+    let total_con_descuento = total - calcular_descuento(total);
+    if(descuento > 0){
+        console.log("por superar los $10000, tiene un descuento del 10%, su total seria: $", total_con_descuento);
+    }
+    else{
+        console.log("usted no supera los $10000,con su compra mayor a $10000 optinene descuento del 10%");
+    }
 }
-else{
-    console.log("usted no supera los $10000,con su compra mayor a $10000 optinene descuento del 10%");
-}
-
 
