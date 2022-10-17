@@ -28,13 +28,27 @@ let local_dos = {
 console.log("puede encontrarnos en nuestro local de provincia de bsas", local_uno);
 console.log("tambien puede encontrarnos en capital federal", local_dos);
 
-//funcion de bienvenida
+//uso de objeto para agregar datos del usuario
+class usuario{
+    constructor(cliente, direccion, telefono){
+    this.cliente = cliente;
+    this.direccion = direccion;
+    this.telefono = telefono;
+    }
+        
+        saludar(){
+            this.cliente=prompt("ingrese su nombre");
+            console.log("bienvenido", this.cliente);
+            this.direccion=prompt("ingrese la direccion para enviar su pedido");
+            console.log("la direccion para enviar su pedido es: ", this.direccion);
+            this.telefono=prompt("ingrese un numero de contacto");
+            console.log("su telefono de contacto es: ", this.telefono);
+        }
+};
 
-function saludar_usuario(){
-    let cliente=prompt("ingrese su usuario");   
-    console.log("BIENVENIDO" , cliente);
-}
-saludar_usuario();
+
+let usuario_nuevo= new usuario();
+usuario_nuevo.saludar();
 
 //lista de productos para pedir
 console.log("nuestros productos en stock son");
@@ -246,7 +260,6 @@ console.log("el total de su pedido a abonar es: $" , total);
 
 //calcular si tiene descuento
 function calcular_descuento(total){
-
     if(total>= 10000){
         descuento = total * 0.1;
         return descuento;
@@ -269,4 +282,5 @@ function total_con_descuento(){
         console.log("usted no supera los $10000,con su compra mayor a $10000 optinene descuento del 10%");
     }
 }
+
 
