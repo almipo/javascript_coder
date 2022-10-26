@@ -1,9 +1,108 @@
 
+//constantes de los precios
+const precio_cebolla= 500;
+const precio_papa=200;
+const precio_boniato=200;
+const precio_tomate=250;
+const precio_manzana=300;
+const precio_pera=180;
+const precio_banana=400;
+const precio_mango=800;
+const precio_romero=700;
+const precio_cilantro=1000;
+const precio_perejil=500;
+const precio_alabahaca=700;
+
+//variables de los botones
+let btn_cebolla = document.getElementById("btn_cebolla");
+let btn_papa = document.getElementById("btn_papa");
+let btn_boniato = document.getElementById("btn_boniato");
+let btn_tomate = document.getElementById("btn_tomate");
+let btn_manzana = document.getElementById("btn_manzana");
+let btn_pera = document.getElementById("btn_pera");
+let btn_banana = document.getElementById("btn_banana");
+let btn_mango = document.getElementById("btn_mango");
+let btn_perejil = document.getElementById("btn_perejil");
+let btn_romero = document.getElementById("btn_romero");
+let btn_albahaca = document.getElementById("btn_albahaca");
+let btn_cilantro = document.getElementById("btn_cilantro");
 
 
 
+//variables de los productos
+
+let total_cebolla=0;
+let total_papa=0;
+let total_boniato=0;
+let total_tomate=0;
+let total_manzana=0;
+let total_pera=0;
+let total_banana=0;
+let total_mango=0;
+let total_romero=0;
+let total_cilantro=0;
+let total_perejil=0;
+let total_albahaca=0;
+let total_verdura=0;
+let total_fruta=0;
+let total_hierba=0;
+
+btn_cebolla.addEventListener("click" , function(){
+
+    let cantidad_cebolla = document.getElementById("cantidad_cebolla");
+    console.log(cantidad_cebolla.value)
+
+    total_cebolla =( precio_cebolla * cantidad_cebolla.value)+ total_cebolla;
+    console.log("valor: $" , total_cebolla );
+})
 
 
+btn_papa.addEventListener("click" , function(){
+    let cantidad_papa = document.getElementById("cantidad_papa");
+    console.log(cantidad_papa.value)
+    total_papa =( precio_cebolla * cantidad_papa.value)+ total_papa;
+    console.log("valor: $" , total_papa );
+})
+
+btn_boniato.addEventListener("click" , function(){
+    let cantidad_boniato = document.getElementById("cantidad_boniato");
+    console.log(cantidad_boniato.value)
+    total_boniato =( precio_cebolla * cantidad_boniato.value)+ total_boniato;
+    console.log("valor: $" , total_boniato );
+})
+
+btn_tomate.addEventListener("click" , function(){
+    let cantidad_tomate = document.getElementById("cantidad_tomate");
+    console.log(cantidad_tomate.value)
+    total_tomate =( precio_tomate * cantidad_tomate.value)+ total_tomate;
+    console.log("valor: $" , total_tomate );
+})
+
+btn_manzana.addEventListener("click" , function(){
+    let cantidad_manzana = document.getElementById("cantidad_manzana");
+    console.log(cantidad_manzana.value)
+    total_manzana =( precio_manzana * cantidad_manzana.value)+ total_manzana;
+    console.log("valor: $" , total_manzana );
+})
+btn_pera.addEventListener("click" , function(){
+    let cantidad_pera = document.getElementById("cantidad_pera");
+    console.log(cantidad_pera.value)
+    total_pera =( precio_pera * cantidad_pera.value)+ total_pera;
+    console.log("valor: $" , total_pera );
+})
+btn_banana.addEventListener("click" , function(){
+    let cantidad_banana = document.getElementById("cantidad_banana");
+    console.log(cantidad_banana.value)
+    total_banana =( precio_banana * cantidad_banana.value)+ total_banana;
+    console.log("valor: $" , total_banana );
+})
+btn_mango.addEventListener("click" , function(){
+    let cantidad_mango = document.getElementById("cantidad_mango");
+    console.log(cantidad_mango.value)
+    total_mango =( precio_mango * cantidad_mango.value)+ total_mango;
+    console.log("valor: $" , total_mango );
+})
+/*
 console.log("BIENVENIDO A MAYORISTA MAYOFRUIT");
 
 // aplicando objetos con los locales
@@ -295,3 +394,4 @@ function total_a_pagar(total, descuento){
 }
 total_a_pagar(total, descuento);
 
+*/
