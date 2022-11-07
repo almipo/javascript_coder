@@ -140,7 +140,6 @@ body{
                         align-items: center;
                         justify-items: center;
                     }
-
                 }
             }
     }
@@ -162,60 +161,59 @@ body{
                 align-items: center;
                 justify-content: space-evenly;
                 flex-direction: row;
-
                 div{
-                    width: 250px;
-                    height: auto;
-                    img{
-                        margin: 5px;
-                        width: 200px;
-                        height: 200px;
-
-                    }
-                    h2{
-                        font-family:$fuente-principal;
-                        color: whitesmoke;
-                        font-size: 20px;
-                        font-weight: bold;
-                        background-color: #D9D18B;
-                        padding:5px;
-                        text-align: center;
-                    }
-                    label{
-                        font-family:$fuente-principal;
-                        color: whitesmoke;
-                        font-size: 20px;
-                        font-weight: bold;
-                        background-color: #D9D18B;
-                        padding:5px;        
-                    }
-                    display: flex;
-                    align-items: center;
-                    justify-items: center;
-                    flex-direction: column;
-                    margin: 10px;
-                    padding: 10px;
-                    border: 2px solid #FFC270;
-                    background-color: #D9D18B;
-                }
-                .boton{
-                    margin: 10px;
-                    padding: 2px;
-                    border: 1px solid whitesmoke ;
-                    background-color: #8EF075;
-                    font-family: $fuente-principal;
-                    font-size: 20px;
-                    text-decoration: none;
-                    span{
-                        margin: 10px;
-                        padding: 2px;
+                    div{
+                        width: 250px;
+                        height: auto;
+                        img{
+                            margin: 5px;
+                            width: 200px;
+                            height: 200px;
+                        }
+                        h2{
+                            font-family:$fuente-principal;
+                            color: whitesmoke;
+                            font-size: 20px;
+                            font-weight: bold;
+                            background-color: #D9D18B;
+                            padding:5px;
+                            text-align: center;
+                        }
+                        label{
+                            font-family:$fuente-principal;
+                            color: whitesmoke;
+                            font-size: 20px;
+                            font-weight: bold;
+                            background-color: #D9D18B;
+                            padding:5px;        
+                        }
+                        display: flex;
                         align-items: center;
                         justify-items: center;
+                        flex-direction: column;
+                        margin: 10px;
+                        padding: 10px;
+                        border: 2px solid #FFC270;
+                        background-color: #D9D18B;
                     }
-
+                    .boton{
+                        margin: 10px;
+                        padding: 2px;
+                        border: 1px solid whitesmoke ;
+                        background-color: #8EF075;
+                        font-family: $fuente-principal;
+                        font-size: 20px;
+                        text-decoration: none;
+                        span{
+                            margin: 10px;
+                            padding: 2px;
+                            align-items: center;
+                            justify-items: center;
+                        }
+                    }
                 }
             }
-    }
+        }
     }
         .section_total{
             .lista_de_pedido{
@@ -230,7 +228,7 @@ body{
                     height: 100%;
                     p{
                         color: whitesmoke;
-                        font-size: 20px;
+                        font-size: 30px;
                         font-weight: bold;
                         background-color: #6679FF;
                         width: 100%;
@@ -238,69 +236,33 @@ body{
                         text-align: center;
                     }
                     .pedido_del_cliente{
-                        display: flex;
-                        align-items: row;
-                        justify-content: space-around;
-
-                        .prodcuto_del_cliente{
-                        color: whitesmoke;
-                        font-size: 20px;
-                        font-weight: bold;
-                        background-color: #6679FF;
-                        width: 100%;
-                        padding:5px;
-                        text-align: center;
-                        }
-                        .cantiad_del_cliente{
-                        color: whitesmoke;
-                        font-size: 20px;
-                        font-weight: bold;
-                        background-color: #6679FF;
-                        width: 100%;
-                        padding:5px;
-                        text-align: center;
+                        table{
+                            .thead{
+                                tr{
+                                    td{
+                                        color: whitesmoke;
+                                        font-size: 20px;
+                                        font-weight: bold;
+                                        background-color: #6679FF;
+                                        width: 100%;
+                                        padding:5px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                            .tbody{
+                                td{
+                                color: whitesmoke;
+                                font-size: 20px;
+                                font-weight: bold;
+                                background-color: #6679FF;
+                                width: 100%;
+                                padding:5px;
+                                text-align: center;
+                                }
+                            }
                         }
                     }
-                    
-                }
-
-            .calculo_del_total{
-                display: flex;
-                align-items: row;
-                justify-content: space-around;
-
-                .descuento{
-                    font-family:$fuente-principal;
-                        color: whitesmoke;
-                        font-size: 40px;
-                        font-weight: bold;
-                        background-color: #66B7FF;
-                        width: 100%;
-                        padding:5px;
-                        text-align: center;
-                }
-
-                .total_compra{
-                    font-family:$fuente-principal;
-                    color: whitesmoke;
-                    font-size: 40px;
-                    font-weight: bold;
-                    background-color: #DE4F7A;
-                    width: 100%;
-                    padding:5px;
-                    text-align: center;
-
-                    .boton_compra{
-                    margin: 10px;
-                    padding: 2px;
-                    border: 1px solid whitesmoke ;
-                    background-color: #8EF075;
-                    font-family: $fuente-principal;
-                    font-size: 20px;
-                    text-decoration: none;
-                    }
-                }
-            }
+                }                
         }
 }
-    

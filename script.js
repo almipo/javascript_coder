@@ -1,6 +1,7 @@
 
+/*
 //constantes de los precios
-const precio_cebolla= 500;
+const precio_cebolla = 500;
 const precio_papa=200;
 const precio_boniato=200;
 const precio_tomate=250;
@@ -13,24 +14,7 @@ const precio_cilantro=1000;
 const precio_perejil=500;
 const precio_alabahaca=700;
 
-//variables de los botones
-let btn_cebolla = document.getElementById("btn_cebolla");
-let btn_papa = document.getElementById("btn_papa");
-let btn_boniato = document.getElementById("btn_boniato");
-let btn_tomate = document.getElementById("btn_tomate");
-let btn_manzana = document.getElementById("btn_manzana");
-let btn_pera = document.getElementById("btn_pera");
-let btn_banana = document.getElementById("btn_banana");
-let btn_mango = document.getElementById("btn_mango");
-let btn_perejil = document.getElementById("btn_perejil");
-let btn_romero = document.getElementById("btn_romero");
-let btn_albahaca = document.getElementById("btn_albahaca");
-let btn_cilantro = document.getElementById("btn_cilantro");
-
-
-
-//variables de los productos
-
+*/
 let total_cebolla=0;
 let total_papa=0;
 let total_boniato=0;
@@ -47,16 +31,113 @@ let total_verdura=0;
 let total_fruta=0;
 let total_hierba=0;
 
-btn_cebolla.addEventListener("click" , function(){
-
-    let cantidad_cebolla = document.getElementById("cantidad_cebolla");
-    console.log(cantidad_cebolla.value)
-
-    total_cebolla =( precio_cebolla * cantidad_cebolla.value)+ total_cebolla;
-    console.log("valor: $" , total_cebolla );
-})
 
 
+
+let arreglo_producto = [];
+
+let btn_agregar = document.querySelectorAll(".boton_agregar");
+/*
+console.log(btn_agregar);
+*/
+
+for(let boton of btn_agregar){
+
+    boton.addEventListener("click" , agregar_carrito )
+
+}
+
+function agregar_carrito(e){
+
+    let hijo = e.target;
+    let padre = hijo.parentNode;
+    let abuelo = padre.parentNode;
+
+/*
+    console.log(hijo);
+    console.log(padre);
+    console.log(abuelo);
+*/
+
+
+    let regex = /(\d+)/g;
+
+    let nombre_producto = padre.querySelector ("h2").textContent;
+    let precio_producto = padre.querySelector("p").textContent;
+    let cantidad_producto = padre.querySelector("input").value;
+    let imagen_producto = abuelo.querySelector("img").src;
+    let total_producto = cantidad_producto * precio_producto.match(regex);
+
+    console.log(nombre_producto);
+    console.log(precio_producto);
+    console.log(cantidad_producto);
+    console.log(total_producto);
+    console.log(imagen_producto);
+
+
+    let producto = {
+        nombre: nombre_producto,
+        precio: precio_producto,
+        img: imagen_producto,
+        cantidad: cantidad_producto,
+        total: total_producto
+    }
+
+
+    mostrar_carrito (producto);
+
+
+    
+
+arreglo_producto.push(producto);
+
+let producto_JSON = JSON.stringify(arreglo_producto);
+console.log(producto_JSON);
+localStorage.setItem("arreglo_producto" , producto_JSON);
+
+let recupero_producto = localStorage.getItem("arreglo_producto");
+recupero_producto = JSON.parse(recupero_producto);
+console.log(recupero_producto);
+}
+
+
+
+
+
+function mostrar_carrito (producto){
+    let fila = document.createElement("tr");
+
+    fila.innerHTML =    `<td><img src="${producto.img}"></td>
+                        <td>${producto.nombre}</td>
+                        <td>${producto.precio}</td>
+                        <td>${producto.cantidad}</td>
+                        <td>${producto.total}</td>
+                        <td><button class="borrar_elemento">Borrar</td>`;
+
+    console.log(fila)
+    let tabla = document.getElementById ("tbody");
+    tabla.append (fila);
+
+
+    let btn_borrar = document.querySelectorAll(".borrar_elemento");
+
+    for (let boton of btn_borrar){
+        boton.addEventListener("click" , borrar_producto)
+    }
+}
+
+
+
+
+function borrar_producto(e){
+    
+    let abuelo = e.target.parentNode.parentNode;
+    abuelo.remove();
+}
+
+
+
+/*
 btn_papa.addEventListener("click" , function(){
     let cantidad_papa = document.getElementById("cantidad_papa");
     console.log(cantidad_papa.value)
@@ -393,5 +474,4 @@ function total_a_pagar(total, descuento){
     }
 }
 total_a_pagar(total, descuento);
-
 */

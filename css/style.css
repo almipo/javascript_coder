@@ -194,7 +194,7 @@ body main section .variedad_hierbas {
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row; }
-  body main section .variedad_hierbas div {
+  body main section .variedad_hierbas div div {
     width: 250px;
     height: auto;
     display: flex;
@@ -205,11 +205,11 @@ body main section .variedad_hierbas {
     padding: 10px;
     border: 2px solid #FFC270;
     background-color: #D9D18B; }
-    body main section .variedad_hierbas div img {
+    body main section .variedad_hierbas div div img {
       margin: 5px;
       width: 200px;
       height: 200px; }
-    body main section .variedad_hierbas div h2 {
+    body main section .variedad_hierbas div div h2 {
       font-family: "Roboto", sans-serif;
       color: whitesmoke;
       font-size: 20px;
@@ -217,14 +217,14 @@ body main section .variedad_hierbas {
       background-color: #D9D18B;
       padding: 5px;
       text-align: center; }
-    body main section .variedad_hierbas div label {
+    body main section .variedad_hierbas div div label {
       font-family: "Roboto", sans-serif;
       color: whitesmoke;
       font-size: 20px;
       font-weight: bold;
       background-color: #D9D18B;
       padding: 5px; }
-  body main section .variedad_hierbas .boton {
+  body main section .variedad_hierbas div .boton {
     margin: 10px;
     padding: 2px;
     border: 1px solid whitesmoke;
@@ -232,7 +232,7 @@ body main section .variedad_hierbas {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     text-decoration: none; }
-    body main section .variedad_hierbas .boton span {
+    body main section .variedad_hierbas div .boton span {
       margin: 10px;
       padding: 2px;
       align-items: center;
@@ -250,60 +250,25 @@ body .section_total .lista_de_pedido {
   height: 100%; }
   body .section_total .lista_de_pedido p {
     color: whitesmoke;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #6679FF;
+    width: 100%;
+    padding: 5px;
+    text-align: center; }
+  body .section_total .lista_de_pedido .pedido_del_cliente table .thead tr td {
+    color: whitesmoke;
     font-size: 20px;
     font-weight: bold;
     background-color: #6679FF;
     width: 100%;
     padding: 5px;
     text-align: center; }
-  body .section_total .lista_de_pedido .pedido_del_cliente {
-    display: flex;
-    align-items: row;
-    justify-content: space-around; }
-    body .section_total .lista_de_pedido .pedido_del_cliente .prodcuto_del_cliente {
-      color: whitesmoke;
-      font-size: 20px;
-      font-weight: bold;
-      background-color: #6679FF;
-      width: 100%;
-      padding: 5px;
-      text-align: center; }
-    body .section_total .lista_de_pedido .pedido_del_cliente .cantiad_del_cliente {
-      color: whitesmoke;
-      font-size: 20px;
-      font-weight: bold;
-      background-color: #6679FF;
-      width: 100%;
-      padding: 5px;
-      text-align: center; }
-
-body .section_total .calculo_del_total {
-  display: flex;
-  align-items: row;
-  justify-content: space-around; }
-  body .section_total .calculo_del_total .descuento {
-    font-family: "Roboto", sans-serif;
+  body .section_total .lista_de_pedido .pedido_del_cliente table .tbody td {
     color: whitesmoke;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
-    background-color: #66B7FF;
+    background-color: #6679FF;
     width: 100%;
     padding: 5px;
     text-align: center; }
-  body .section_total .calculo_del_total .total_compra {
-    font-family: "Roboto", sans-serif;
-    color: whitesmoke;
-    font-size: 40px;
-    font-weight: bold;
-    background-color: #DE4F7A;
-    width: 100%;
-    padding: 5px;
-    text-align: center; }
-    body .section_total .calculo_del_total .total_compra .boton_compra {
-      margin: 10px;
-      padding: 2px;
-      border: 1px solid whitesmoke;
-      background-color: #8EF075;
-      font-family: "Roboto", sans-serif;
-      font-size: 20px;
-      text-decoration: none; }
