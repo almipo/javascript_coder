@@ -94,7 +94,7 @@
                 </div>
                 <div>
                     <div>
-                        <img src="./img/tomate.png" alt="">                        
+                        <img src="./img/tomate.png" alt="">
                         <div>
                             <h2>TOMATE</h2>
                             <P id="precio_tomate">$250 x kg</P>
@@ -121,7 +121,7 @@
                             <h2>MANZANA</h2>
                             <P id="precio_manzana">$300 x kg</P>
                             <label for="">cantidad</label>
-                            <input type="number" min="1" pattern="^[0-9]+"  id="cantidad_manzana">
+                            <input type="number" min="1" pattern="^[0-9]+" id="cantidad_manzana">
                             <button class="boton_agregar">AGREGAR</button>
                         </div>
                     </div>
@@ -171,7 +171,7 @@
                 <h3>HIERBAS</h3>
             </div>
             <div class="variedad_hierbas">
-                <div >
+                <div>
                     <div>
                         <img src="./img/romero.png" alt="">
                         <div>
@@ -223,25 +223,35 @@
         </section>
         <!-- ------------------------- total de la cuenta -------------------------- -->
         <section class="section_total">
-
             <div class="lista_de_pedido" id="pedido">
-                <h2>LISTA DE COMPRA</h2>
-                <p>SU PEDIDO ES EL SIGUIENTE</p>
+                <div>
+                    <h2>LISTA DE COMPRA</h2>
+                </div>
                 <div class="pedido_del_cliente">
+                    <p>SU PEDIDO ES EL SIGUIENTE</p>
                     <table>
-                    <thead class="thead">
-                        <tr>
-                            <td></td>
-                            <td>PRODUCTO</td>
-                            <td>PRECIO</td>
-                            <td>CANTIDAD</td>
-                            <td>TOTAL PRODUCTO</td>
-                        </tr>
-                    </thead>
-                    <tbody id="tbody">
+                        <thead class="thead">
+                            <tr>
+                                <td></td>
+                                <td>PRODUCTO</td>
+                                <td>PRECIO</td>
+                                <td>CANTIDAD</td>
+                                <td>TOTAL PRODUCTO</td>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
 
-                    </tbody>
+                        </tbody>
                     </table>
+                    <div>
+                        <div>
+                            <h2>TOTAL:</h2>
+                            <div id="total">
+
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>

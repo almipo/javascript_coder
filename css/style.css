@@ -238,37 +238,47 @@ body main section .variedad_hierbas {
       align-items: center;
       justify-items: center; }
 
-body .section_total .lista_de_pedido {
-  font-family: "Roboto", sans-serif;
-  color: whitesmoke;
-  font-size: 40px;
-  font-weight: bold;
-  background-color: #6679FF;
+body .section_total .lista_de_pedido div h2 {
+  background-color: #FFC270;
   padding: 5px;
   text-align: center;
   width: 100%;
-  height: 100%; }
-  body .section_total .lista_de_pedido p {
-    color: whitesmoke;
-    font-size: 30px;
-    font-weight: bold;
-    background-color: #6679FF;
-    width: 100%;
-    padding: 5px;
-    text-align: center; }
+  height: 100%;
+  color: white; }
+
+body .section_total .lista_de_pedido td {
+  color: grey;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  width: 20%;
+  padding: 5px;
+  text-align: center; }
+  body .section_total .lista_de_pedido td img {
+    width: 100px;
+    height: 100px; }
+
+body .section_total .lista_de_pedido .pedido_del_cliente p {
+  color: whitesmoke;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #8EF075;
+  width: 100%;
+  padding: 5px;
+  text-align: center; }
+
+body .section_total .lista_de_pedido .pedido_del_cliente table .thead tr {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: white;
+  width: 20%;
+  padding: 5px; }
   body .section_total .lista_de_pedido .pedido_del_cliente table .thead tr td {
     color: whitesmoke;
     font-size: 20px;
     font-weight: bold;
-    background-color: #6679FF;
-    width: 100%;
-    padding: 5px;
-    text-align: center; }
-  body .section_total .lista_de_pedido .pedido_del_cliente table .tbody td {
-    color: whitesmoke;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: #6679FF;
-    width: 100%;
-    padding: 5px;
-    text-align: center; }
+    background-color: #8EF075;
+    width: 20%;
+    padding: 5px; }
