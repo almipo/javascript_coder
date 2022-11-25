@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- --------------------------------- css --------------------------------- -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <title>Document</title>
 </head>
 
@@ -50,215 +51,46 @@
         </section>
     </header>
     <main>
-        <!-- ------------------------ seccion de verduras ------------------------- -->
-        <section>
-            <div class="verdura" id="verdura">
-                <h3>VERDURAS</h3>
-            </div>
-            <div class="variedades_verduras">
-                <div>
-                    <div id="cebolla">
-                        <img src="./img/cebolla.png" alt="">
-                        <div>
-                            <h2>CEBOLLA</h2>
-                            <P id="precio_cebolla">$500 x kg</P>
-                            <label for="">cantidad</label>
-                            <input type="number" min="1" pattern="^[0-9]+" id="cantidad">
-                            <button class="boton_agregar">AGREGAR</button>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="./img/papa.png" alt="">
-                        <div>
-                            <h2>PAPA</h2>
-                            <P id="precio_papa">$200 x kg</P>
-                            <label for="">cantidad</label>
-                            <input type="number" min="1" pattern="^[0-9]+" id="cantidad_papa">
-                            <button class="boton_agregar">AGREGAR</button>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="./img/boniato.png" alt="">
-                        <div>
-                            <h2>BONIATO</h2>
-                            <P id="precio_boniato">$200 x kg</P>
-                            <label for="">cantidad</label>
-                            <input type="number" min="1" pattern="^[0-9]+" id="cantidad_boniato">
-                            <button class="boton_agregar">AGREGAR</button>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="./img/tomate.png" alt="">
-                        <div>
-                            <h2>TOMATE</h2>
-                            <P id="precio_tomate">$250 x kg</P>
-                            <label for="">cantidad</label>
-                            <input type="number" min="1" pattern="^[0-9]+" id="cantidad_tomate">
-                            <button class="boton_agregar">AGREGAR</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- -------------------------- seccion de fruta --------------------------- -->
-        <section>
-            <div class="fruta" id="fruta">
-                <h3>FRUTA</h3>
-            </div>
-            <div class="variedad_fruta">
-                <div>
-                    <div>
-                        <img src="./img/manzana.png" alt="">
-                        <div>
-                            <h2>MANZANA</h2>
-                            <P id="precio_manzana">$300 x kg</P>
-                            <label for="">cantidad</label>
-                            <input type="number" min="1" pattern="^[0-9]+" id="cantidad_manzana">
-                            <button class="boton_agregar">AGREGAR</button>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="./img/pera.png" alt="">
-                        <div>
-                            <h2>PERA</h2>
-                            <P id="precio_cebolla">$180 x kg</P>
-                            <label for="">cantidad</label>
-                            <input type="number" min="1" pattern="^[0-9]+" id="cantidad_pera">
-                            <button class="boton_agregar">AGREGAR</button>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="./img/banana.png" alt="">
-                        <div>
-                            <h2>BANANA</h2>
-                            <P id="precio_banana">$400 x kg</P>
-                            <label for="">cantidad</label>
-                            <input type="number" min="1" pattern="^[0-9]+" id="cantidad_banana">
-                            <button class="boton_agregar">AGREGAR</button>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="./img/mango.png" alt="">
-                        <div>
-                            <h2>MANGO</h2>
-                            <P id="precio_mango">$800 x kg</P>
-                            <label for="">cantidad</label>
-                            <input type="number" min="1" pattern="^[0-9]+" id="cantidad_mango">
-                            <button class="boton_agregar">AGREGAR</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- -------------------------- seccion de hierba -------------------------- -->
-        <section>
-            <div class="hierba" id="hierba">
-                <h3>HIERBAS</h3>
-            </div>
-            <div class="variedad_hierbas">
-                <div>
-                    <div>
-                        <img src="./img/romero.png" alt="">
-                        <div>
-                            <h2>ROMERO</h2>
-                            <P id="precio_romero">$700 x kg</P>
-                            <label for="">cantidad</label>
-                            <input type="number" min="1" pattern="^[0-9]+" id="cantidad_romero">
-                            <button class="boton_agregar">AGREGAR</button>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="./img/cilantro.png" alt="">
-                        <div>
-                            <h2>CILANTRO</h2>
-                            <P id="precio_cilantro">$1000 x kg</P>
-                            <label for="">cantidad</label>
-                            <input type="number" min="1" pattern="^[0-9]+" id="cantidad_cilantro">
-                            <button class="boton_agregar">AGREGAR</button>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="./img/perejil.png" alt="">
-                        <div>
-                            <h2>PEREJIL</h2>
-                            <P id="precio_perejil">$500 x kg</P>
-                            <label for="">cantidad</label>
-                            <input type="number" min="1" pattern="^[0-9]+" id="cantidad_perejil">
-                            <button class="boton_agregar">AGREGAR</button>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="./img/albahaca.png" alt="">
-                        <div>
-                            <h2>ALBAHACA</h2>
-                            <P id="precio_albahaca">$700 x kg</P>
-                            <label for="">cantidad</label>
-                            <input type="number" min="1" pattern="^[0-9]+" id="cantidad_albahaca">
-                            <button class="boton_agregar">AGREGAR</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- ------------------------ seccion de carrito ------------------------- -->
+        <section id="contenedor">
+        
         </section>
         <!-- ------------------------- total de la cuenta -------------------------- -->
-        <section class="section_total">
-            <div class="lista_de_pedido" id="pedido">
-                <div>
+        <section class="carrito">
+            <div class="item_carrito" id="pedido">
+                <div class="header_carrito">
                     <h2>LISTA DE COMPRA</h2>
+                    
                 </div>
-                <div class="pedido_del_cliente">
+                <div>
                     <p>SU PEDIDO ES EL SIGUIENTE</p>
-                    <table>
-                        <thead class="thead">
-                            <tr>
-                                <td></td>
-                                <td>PRODUCTO</td>
-                                <td>PRECIO</td>
-                                <td>CANTIDAD</td>
-                                <td>TOTAL PRODUCTO</td>
-                            </tr>
-                        </thead>
-                        <tbody id="tbody">
+                </div>
+                <table class="productos_carrito">
+                    <thead class="thead">
+                        <tr class="header_carrito">
+                            <th></th>
+                            <th>PRODUCTO</th>
+                            <th>PRECIO</th>
+                            <th>CANTIDAD</th>
+                            <th>TOTAL PRODUCTO</th>
+                            <th>BORRAR PRODUCTO</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
 
-                        </tbody>
-                    </table>
-                    <div>
-                        <div>
-                            <h2>TOTAL:</h2>
-                            <div id="total">
 
-                            </div>
-                        </div>
-
-                    </div>
+                    </tbody>
+                </table>
+                <div id="total">
+                    <h2 id="total_pagar">TOTAL:</h2>
                 </div>
             </div>
         </section>
     </main>
 
     <footer></footer>
-    <script src="./script.js"></script> -
+    <script src="./script.js"></script> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 
 </html>

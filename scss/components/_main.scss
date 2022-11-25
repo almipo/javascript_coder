@@ -1,106 +1,33 @@
 body{
     main{ 
-        section{
-            .verdura{
-                h3{
-                    font-family:$fuente-principal;
-                    color: whitesmoke;
-                    font-size: 40px;
-                    font-weight: bold;
-                    background-color: #D9D18B;
-                    padding:5px;
-                    text-align: center;
+        #contenedor{
+            
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+            .productos_venta{
+                width: 200px;
+                height: auto;
+                margin: 10px;
+                border-radius: 20px;    
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                flex-direction: column;                
+                .img_producto{
+                    
+                    margin: 5px;                    
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 20px 20px 0 0;
                 }
-            }
-            .variedades_verduras{
-                    margin: 50px;
-                    display: inline-flex;
+                .descripcion_producto{
+                    display: flex;
+                    flex-direction: column;
                     align-items: center;
                     justify-content: space-evenly;
-                    flex-direction: row;
-
-                    div{
-                        width: 250px;
-                        height: auto;
-                        img{
-                            margin: 5px;
-                            width: 200px;
-                            height: 200px;
-                            
-                        }
-                        h2{
-                            font-family:$fuente-principal;
-                            color: whitesmoke;
-                            font-size: 20px;
-                            font-weight: bold;
-                            background-color: #D9D18B;
-                            padding:5px;
-                            text-align: center;
-                        }
-                        label{
-                            font-family:$fuente-principal;
-                            color: whitesmoke;
-                            font-size: 20px;
-                            font-weight: bold;
-                            background-color: #D9D18B;
-                            padding:5px;        
-                        }
-                        display: flex;
-                        align-items: center;
-                        justify-items: center;
-                        flex-direction: column;
-                        margin: 10px;
-                        padding: 10px;
-                        border: 2px solid #FFC270;
-                        background-color: #D9D18B;
-                    }
-                    .boton{
-                        margin: 10px;
-                        padding: 2px;
-                        border: 1px solid whitesmoke ;
-                        background-color: #8EF075;
-                        font-family: $fuente-principal;
-                        font-size: 20px;
-                        text-decoration: none;
-                        span{
-                            margin: 10px;
-                            padding: 2px;
-                            align-items: center;
-                            justify-items: center;
-                        }
-
-                    }
-                }
-        }
-        section{
-            .fruta{
-                h3{
-                    font-family:$fuente-principal;
-                    color: whitesmoke;
-                    font-size: 40px;
-                    font-weight: bold;
-                    background-color:#FFC270 ;
-                    padding:5px;
-                    text-align: center;
-                }
-            }
-            .variedad_fruta{
-                margin: 50px;
-                display: inline-flex;
-                align-items: center;
-                justify-content: space-evenly;
-                flex-direction: row;
-
-                div{
-                    width: 250px;
-                    height: auto;
-                    img{
-                        margin: 5px;
-                        width: 200px;
-                        height: 200px;
-
-                    }
-                    h2{
+                    h3{
                         font-family:$fuente-principal;
                         color: whitesmoke;
                         font-size: 20px;
@@ -109,7 +36,15 @@ body{
                         padding:5px;
                         text-align: center;
                     }
-                    label{
+                    h2{
+                        font-family:$fuente-principal;
+                        color: whitesmoke;
+                        font-size: 20px;
+                        font-weight: bold;
+                        background-color: #D9D18B;
+                        padding:5px;        
+                    }
+                    p{
                         font-family:$fuente-principal;
                         color: whitesmoke;
                         font-size: 20px;
@@ -120,102 +55,87 @@ body{
                     display: flex;
                     align-items: center;
                     justify-items: center;
-                    flex-direction: column;
-                    margin: 10px;
-                    padding: 10px;
-                    border: 2px solid #FFC270;
+                    flex-direction: column;   
+                    width: 200px;    
                     background-color: #D9D18B;
-                }
-                .boton{
-                    margin: 10px;
-                    padding: 2px;
-                    border: 1px solid whitesmoke ;
-                    background-color: #8EF075;
-                    font-family: $fuente-principal;
-                    font-size: 20px;
-                    text-decoration: none;
-                    span{
-                        margin: 10px;
-                        padding: 2px;
-                        align-items: center;
-                        justify-items: center;
-                    }
-                }
-            }
-    }
-        section{
-            .hierba{
-                h3{
-                    font-family:$fuente-principal;
-                    color: whitesmoke;
-                    font-size: 40px;
-                    font-weight: bold;
-                    background-color: #8EF075;
-                    padding:5px;
-                    text-align: center;
-                }
-            }
-            .variedad_hierbas{
-                margin: 50px;
-                display: inline-flex;
-                align-items: center;
-                justify-content: space-evenly;
-                flex-direction: row;
-                div{
+                    border-radius: 0 0 20px 20px;
                     div{
-                        width: 250px;
-                        height: auto;
-                        img{
-                            margin: 5px;
-                            width: 200px;
-                            height: 200px;
+                        .cant_input{
+
                         }
-                        h2{
+                        .boton_agregar{
                             font-family:$fuente-principal;
                             color: whitesmoke;
                             font-size: 20px;
                             font-weight: bold;
-                            background-color: #D9D18B;
-                            padding:5px;
-                            text-align: center;
-                        }
-                        label{
-                            font-family:$fuente-principal;
-                            color: whitesmoke;
-                            font-size: 20px;
-                            font-weight: bold;
-                            background-color: #D9D18B;
+                            background-color:#D9D18B;
                             padding:5px;        
-                        }
-                        display: flex;
-                        align-items: center;
-                        justify-items: center;
-                        flex-direction: column;
-                        margin: 10px;
-                        padding: 10px;
-                        border: 2px solid #FFC270;
-                        background-color: #D9D18B;
-                    }
-                    .boton{
-                        margin: 10px;
-                        padding: 2px;
-                        border: 1px solid whitesmoke ;
-                        background-color: #8EF075;
-                        font-family: $fuente-principal;
-                        font-size: 20px;
-                        text-decoration: none;
-                        span{
-                            margin: 10px;
-                            padding: 2px;
-                            align-items: center;
-                            justify-items: center;
                         }
                     }
                 }
             }
         }
+
+        .carrito{
+            div{
+                div{
+                    display: flex;
+                    align-items: center;
+                    h2{
+                        font-size: 30;
+                        background-color: #FFC270;
+                        padding:5px;
+                        text-align: center;
+                        width: 100% ;
+                        height: 100%;
+                        color: white;
+                    }
+                    .vaciar_carrito{
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+                div{
+                    p{
+                        color: whitesmoke;
+                        font-size: 20px;
+                        font-weight: bold;
+                        background-color:  #8EF075;
+                        width: 100%;
+                        padding:5px;
+                        text-align: center;
+                    }
+                }
+                .productos_carrito{
+                    .thead{
+                        tr{
+                            th{
+                                text-align: center;
+                                    color: whitesmoke;
+                                        font-size: 15px;
+                                        font-weight: bold;
+                                        background-color:  #8EF075;
+                                        width: 20%;
+                                        padding:5px;
+                            }
+                        }
+                    }
+                    .tbody{
+                        
+                    }
+                }
+            }
+        }
     }
-        .section_total{
+}
+
+
+
+
+
+
+
+    /*
             .lista_de_pedido{
                 div{
                     h2{
@@ -277,6 +197,6 @@ body{
                     }
 
 
-                }                
-        }
-}
+                }
+                */              
+ 

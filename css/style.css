@@ -61,224 +61,160 @@ body header .fondo {
   body header .fondo .nav li:hover > ul {
     display: block; }
 
-body main section .verdura h3 {
-  font-family: "Roboto", sans-serif;
-  color: whitesmoke;
-  font-size: 40px;
-  font-weight: bold;
-  background-color: #D9D18B;
-  padding: 5px;
-  text-align: center; }
-
-body main section .variedades_verduras {
-  margin: 50px;
-  display: inline-flex;
-  align-items: center;
+body main #contenedor {
+  display: flex;
   justify-content: space-evenly;
-  flex-direction: row; }
-  body main section .variedades_verduras div {
-    width: 250px;
+  flex-wrap: wrap; }
+  body main #contenedor .productos_venta {
+    width: 200px;
     height: auto;
+    margin: 10px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-items: center;
-    flex-direction: column;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid #FFC270;
-    background-color: #D9D18B; }
-    body main section .variedades_verduras div img {
+    flex-direction: column; }
+    body main #contenedor .productos_venta .img_producto {
       margin: 5px;
       width: 200px;
-      height: 200px; }
-    body main section .variedades_verduras div h2 {
-      font-family: "Roboto", sans-serif;
-      color: whitesmoke;
-      font-size: 20px;
-      font-weight: bold;
-      background-color: #D9D18B;
-      padding: 5px;
-      text-align: center; }
-    body main section .variedades_verduras div label {
-      font-family: "Roboto", sans-serif;
-      color: whitesmoke;
-      font-size: 20px;
-      font-weight: bold;
-      background-color: #D9D18B;
-      padding: 5px; }
-  body main section .variedades_verduras .boton {
-    margin: 10px;
-    padding: 2px;
-    border: 1px solid whitesmoke;
-    background-color: #8EF075;
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    text-decoration: none; }
-    body main section .variedades_verduras .boton span {
-      margin: 10px;
-      padding: 2px;
+      height: 200px;
+      border-radius: 20px 20px 0 0; }
+    body main #contenedor .productos_venta .descripcion_producto {
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-items: center; }
-
-body main section .fruta h3 {
-  font-family: "Roboto", sans-serif;
-  color: whitesmoke;
-  font-size: 40px;
-  font-weight: bold;
-  background-color: #FFC270;
-  padding: 5px;
-  text-align: center; }
-
-body main section .variedad_fruta {
-  margin: 50px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row; }
-  body main section .variedad_fruta div {
-    width: 250px;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    flex-direction: column;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid #FFC270;
-    background-color: #D9D18B; }
-    body main section .variedad_fruta div img {
-      margin: 5px;
+      justify-content: space-evenly;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      flex-direction: column;
       width: 200px;
-      height: 200px; }
-    body main section .variedad_fruta div h2 {
-      font-family: "Roboto", sans-serif;
-      color: whitesmoke;
-      font-size: 20px;
-      font-weight: bold;
       background-color: #D9D18B;
-      padding: 5px;
-      text-align: center; }
-    body main section .variedad_fruta div label {
-      font-family: "Roboto", sans-serif;
-      color: whitesmoke;
-      font-size: 20px;
-      font-weight: bold;
-      background-color: #D9D18B;
-      padding: 5px; }
-  body main section .variedad_fruta .boton {
-    margin: 10px;
-    padding: 2px;
-    border: 1px solid whitesmoke;
-    background-color: #8EF075;
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    text-decoration: none; }
-    body main section .variedad_fruta .boton span {
-      margin: 10px;
-      padding: 2px;
-      align-items: center;
-      justify-items: center; }
+      border-radius: 0 0 20px 20px; }
+      body main #contenedor .productos_venta .descripcion_producto h3 {
+        font-family: "Roboto", sans-serif;
+        color: whitesmoke;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #D9D18B;
+        padding: 5px;
+        text-align: center; }
+      body main #contenedor .productos_venta .descripcion_producto h2 {
+        font-family: "Roboto", sans-serif;
+        color: whitesmoke;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #D9D18B;
+        padding: 5px; }
+      body main #contenedor .productos_venta .descripcion_producto p {
+        font-family: "Roboto", sans-serif;
+        color: whitesmoke;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #D9D18B;
+        padding: 5px; }
+      body main #contenedor .productos_venta .descripcion_producto div .boton_agregar {
+        font-family: "Roboto", sans-serif;
+        color: whitesmoke;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #D9D18B;
+        padding: 5px; }
 
-body main section .hierba h3 {
-  font-family: "Roboto", sans-serif;
-  color: whitesmoke;
-  font-size: 40px;
-  font-weight: bold;
-  background-color: #8EF075;
-  padding: 5px;
-  text-align: center; }
-
-body main section .variedad_hierbas {
-  margin: 50px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row; }
-  body main section .variedad_hierbas div div {
-    width: 250px;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    flex-direction: column;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid #FFC270;
-    background-color: #D9D18B; }
-    body main section .variedad_hierbas div div img {
-      margin: 5px;
-      width: 200px;
-      height: 200px; }
-    body main section .variedad_hierbas div div h2 {
-      font-family: "Roboto", sans-serif;
-      color: whitesmoke;
-      font-size: 20px;
-      font-weight: bold;
-      background-color: #D9D18B;
-      padding: 5px;
-      text-align: center; }
-    body main section .variedad_hierbas div div label {
-      font-family: "Roboto", sans-serif;
-      color: whitesmoke;
-      font-size: 20px;
-      font-weight: bold;
-      background-color: #D9D18B;
-      padding: 5px; }
-  body main section .variedad_hierbas div .boton {
-    margin: 10px;
-    padding: 2px;
-    border: 1px solid whitesmoke;
-    background-color: #8EF075;
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    text-decoration: none; }
-    body main section .variedad_hierbas div .boton span {
-      margin: 10px;
-      padding: 2px;
-      align-items: center;
-      justify-items: center; }
-
-body .section_total .lista_de_pedido div h2 {
-  background-color: #FFC270;
-  padding: 5px;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  color: white; }
-
-body .section_total .lista_de_pedido td {
-  color: grey;
-  font-size: 20px;
-  font-weight: bold;
-  background-color: white;
-  width: 20%;
-  padding: 5px;
-  text-align: center; }
-  body .section_total .lista_de_pedido td img {
+body main .carrito div div {
+  display: flex;
+  align-items: center; }
+  body main .carrito div div h2 {
+    font-size: 30;
+    background-color: #FFC270;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: white; }
+  body main .carrito div div .vaciar_carrito {
     width: 100px;
     height: 100px; }
 
-body .section_total .lista_de_pedido .pedido_del_cliente p {
+body main .carrito div div p {
   color: whitesmoke;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   background-color: #8EF075;
   width: 100%;
   padding: 5px;
   text-align: center; }
 
-body .section_total .lista_de_pedido .pedido_del_cliente table .thead tr {
+body main .carrito div .productos_carrito .thead tr th {
   text-align: center;
   color: whitesmoke;
-  font-size: 30px;
+  font-size: 15px;
   font-weight: bold;
-  background-color: white;
+  background-color: #8EF075;
   width: 20%;
   padding: 5px; }
-  body .section_total .lista_de_pedido .pedido_del_cliente table .thead tr td {
-    color: whitesmoke;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: #8EF075;
-    width: 20%;
-    padding: 5px; }
+
+/*
+            .lista_de_pedido{
+                div{
+                    h2{
+                        background-color: #FFC270;
+                        padding:5px;
+                        text-align: center;
+                        width: 100% ;
+                        height: 100%;
+                        color: white;
+                    }
+                }
+                td{
+                    
+                    img{
+                        width: 100px;
+                        height: 100px;
+                    }
+                    color:grey;
+                    font-size: 20px;
+                    font-weight: bold;
+                    background-color:  white;
+                    width: 20%;
+                    padding:5px;
+                    text-align: center;
+                }
+                        
+                    .pedido_del_cliente{
+                        p{
+                            color: whitesmoke;
+                            font-size: 30px;
+                            font-weight: bold;
+                            background-color:  #8EF075;
+                            width: 100%;
+                            padding:5px;
+                            text-align: center;
+                        }
+                        table{
+                            .thead{
+                                tr{
+                                    text-align: center;
+                                    color: whitesmoke;
+                                        font-size: 30px;
+                                        font-weight: bold;
+                                        background-color:  white;
+                                        width: 20%;
+                                        padding:5px;
+                                    td{
+                                        color: whitesmoke;
+                                        font-size: 20px;
+                                        font-weight: bold;
+                                        background-color:  #8EF075;
+                                        width: 20%;
+                                        padding:5px;
+                                        ;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+                */

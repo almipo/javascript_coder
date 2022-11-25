@@ -1,0 +1,53 @@
+[
+    {
+        "nombre": "CEBOLLA",
+        "precio": 500,
+        "imagen": "<img class='img_producto' src='./img/cebolla.png' alt='manzana roja'>"
+    },
+    {
+        "nombre": "PAPA",
+        "precio": 200,
+        "imagen": "<img class='imgProducto' src='./img/papa.png' alt='cebolla'>"
+    },
+    {
+        "nombre": "BONIATO",
+        "precio":200,
+        "imagen": "<img class='imgProducto' src='./img/boniato.png' alt='kiwi'>"
+    },
+    {
+        "nombre": "TOMATE",
+        "precio": 250,
+        "imagen": "<img class='imgProducto' src='./img/tomate.png' alt='limon'>"
+    },
+    {
+        "nombre": "BANANA",
+        "precio": 400,
+        "imagen": "<img class='imgProducto' src='./img/banana.png' alt='frutilla'>"
+    },
+    {
+        "nombre": "MANGO",
+        "precio": 800,
+        "imagen": "<img class='imgProducto' src='./img/mango.png' alt='pera'>"
+    },
+    {
+        "nombre": "ROMERO",
+        "precio": 700,
+        "imagen": "<img class='imgProducto' src='./img/romero.png' alt='banana'>"
+    },
+    {
+        "nombre": "CILANTRO",
+        "precio": 1000,
+        "imagen": "<img class='imgProducto' src='./img/cilantro.png' alt='Naranja'>"
+    },
+    {
+        "nombre": "PEREJIL",
+        "precio": 500,
+        "imagen": "<img class='imgProducto' src='./img/perejil.png' alt='Palta'>"
+    },
+    {
+        "nombre": "ALBAHACA",
+        "precio": 700,
+        "imagen": "<img class='imgProducto' src='./img/albahaca.png' alt='Morron'>"
+    }
+    
+]
